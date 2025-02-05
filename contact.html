@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- მობილური ტელეფონების მხარდაჭერა -->
+    <title>Contact Naruto Ramen House</title> <!-- გვერდის სათაური -->
+    <link rel="stylesheet" href="reset.css"> <!-- ყველა ფაილს უნდა მივუთითოთ რადგან არ მოხდეს რაიმე ჩეპე -->
+    <link rel="stylesheet" href="styles.css"> <!-- დავუკავშიროთ ცსს ფაილს -->
+</head>
+<body>
+
+<!-- ბურგერის მენიუ ღილაკი -->
+<div class="menu-toggle">☰</div>
+
+<!-- ნავიგაციის მენიუ -->
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- გვერდის სათაური -->
+<header>
+    <h1>📞 Contact Naruto Ramen House</h1>
+    <p>რამე კითხვა გაქვს? დაგვიკავშირდი!</p>
+</header>
+
+<!-- საკონტაქტო ფორმა -->
+<section class="contact">
+    <form id="contactForm" class="contact">
+        <h2>📩 Contact Us</h2>
+        
+        <!-- მომხმარებლის სახელი -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <!-- ელ. ფოსტა -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <span id="emailError" class="error-message"></span>
+        
+        <!-- პაროლი -->
+        <label for="password">Password:</label>
+        <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Enter a password" required>
+            <button type="button" id="togglePassword">👁️</button>
+        </div>
+        <span id="passwordError" class="error-message"></span>
+    
+        <!-- შეტყობინება -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+        <span id="messageError" class="error-message"></span>
+    
+        <!-- გაგზავნის ღილაკი -->
+        <button type="submit">Send Message</button>
+        <p id="formMessage"></p>
+    </form>
+    
+</section>
+
+<!-- ქუქიების შეტყობინება -->
+<div id="cookieNotice">
+    🍪 ჩვენ ვიყენებთ ქუქიებს. <button id="acceptCookies">Accept</button>
+</div>
+<!-- ქვედა ნაწილი -->
+<footer>
+    <p>© 2025 Naruto Ramen House 🍜 | Believe It!</p>
+</footer>
+<!-- დავაკავშიროთ JavaScript-ის ფაილთან, ეს ხდება აქ რადგან ზემოთ css ფაილების დაკავშირება ხდება მარტო და იქ არ შეიძლება -->
+<script src="script.js"></script>
+</body>
+</html>
